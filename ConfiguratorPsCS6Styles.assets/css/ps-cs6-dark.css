@@ -241,6 +241,7 @@ input.input-text-ps-cs6[disabled],
   border-bottom-right-radius: 2px;
   -webkit-border-top-right-radius: 2px;
   border-top-right-radius: 2px;
+  background-color: #3b3b3b;
   background-image: linear-gradient(to bottom, #252525, #1d1d1d);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#252525), to(#1d1d1d));
   -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -263,7 +264,7 @@ input.input-text-ps-cs6[disabled],
 .dropdown-menu.dropdown-menu-ps-cs6 > li > a {
   color: #000000;
   line-height: 11px;
-  padding: 1px 10px;
+  padding: 1px 22px;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-shadow: none;
