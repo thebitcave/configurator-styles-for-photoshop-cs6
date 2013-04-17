@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configurator - Photoshop CS6 Skin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+    <!-- Ps CS6 variant -->
+    <link id="theme_stylesheet" href="css/ps-cs6-medium-dark.css" rel="stylesheet" media="screen">
+      
+    <style type="text/css">
+        body {
+            padding: 20px;
+        }
+    </style>
+      
+    <script type="application/javascript">
+	   function onThemeChanged(event) {
+           if(event.appSkinInfo.panelBackgroundColor == "343434")
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-dark.css";
+           else if(event.appSkinInfo.panelBackgroundColor == "535353")
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-medium-dark.css";
+           else if(event.appSkinInfo.panelBackgroundColor == "d6d6d6")
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-light.css";
+           else if(event.appSkinInfo.panelBackgroundColor == "b8b8b8")
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-medium-light.css";
+           // if none of these colors are found, the interface is custom, so stick to isLight/isDark
+           else if(event.isLight)
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-medium-light.css";
+           else
+               document.getElementById('theme_stylesheet').href = "css/ps-cs6-medium-dark.css";
+       }
+    </script>
+
+  </head>
+    
+  <body class="body-ps-cs6" onload="addEventListener('ThemeChangedEvent', onThemeChanged)">
+
+      <h5>Text and Labels</h5>
+      <p>Regular Text&nbsp;&nbsp;&nbsp;&nbsp;<span class="disabled-ps-cs6">Disabled Text</span></p>
+
+      <br />
+
+      <h5>Buttons: </h5>
+      <button class="btn btn-ps-cs6">Button</button>
+      <button class="btn btn-ps-cs6" data-toggle="button">Toggle Button</button>
+      <button class="btn btn-ps-cs6" disabled="disabled">Disabled Button</button>
+
+      <br /><br />
+
+      <h5>Link Buttons</h5>
+      <a href="#" class="btn btn-ps-cs6">Button</a>
+      <a href="#" class="btn btn-ps-cs6" data-toggle="button">Toggle Button</a>
+      <a href="#" class="btn btn-ps-cs6 disabled">Disabled Button</a>
+
+      <br /><br />
+
+      <h5>Input Buttons</h5>
+      <input class="btn btn-ps-cs6" type="button" value="Input" />
+      <input class="btn btn-ps-cs6 disabled" type="button" value="Disabled Input" />
+      <input class="btn btn-ps-cs6" type="submit" value="Submit" />
+      <input class="btn btn-ps-cs6 disabled" type="submit" value="Disabled Submit" />
+
+      <br /><br />
+
+      <h5>Alternative Buttons</h5>
+      <button class="btn switch-vertical-ps-cs6 active" data-toggle="button">...</button>
+      <button class="btn switch-vertical-ps-cs6" disabled="disabled" data-toggle="button">...</button>
+
+      <button class="btn switch-vertical-ps-cs6 on active" data-toggle="button">...</button>
+      <button class="btn switch-vertical-ps-cs6 on" disabled="disabled" data-toggle="button">...</button>
+      <br /><br />
+      <button class="btn checkbox-ps-cs6" data-toggle="button">Checkbox Button</button>
+      <button class="btn checkbox-ps-cs6" disabled="disabled" data-toggle="button">Disabled Checkbox Button</button>
+      <br /><br />
+      <button class="btn btn-ps-cs6 borderless">Borderless Button</button>
+      <button class="btn btn-ps-cs6 borderless" disabled="disabled" data-toggle="button">Disabled Borderless Button</button>
+          
+      <br /><br />
+
+      <h5>Toolbars</h5>
+      <div class="btn-toolbar btn-toolbar-ps-cs6">
+          <div class="btn-group">
+            <a class="btn btn-ps-cs6" href="#">1</a>
+            <a class="btn btn-ps-cs6" href="#">2</a>
+            <a class="btn btn-ps-cs6" href="#">3</a>
+          </div>
+          <div class="btn-group" data-toggle="buttons-checkbox">
+            <a class="btn btn-ps-cs6 active" href="#">4</a>
+            <a class="btn btn-ps-cs6" href="#">5</a>
+            <a class="btn btn-ps-cs6" href="#">6</a>
+          </div>
+          <div class="btn-group" data-toggle="buttons-radio">
+            <a class="btn btn-ps-cs6 active" href="#">7</a>
+            <a class="btn btn-ps-cs6" href="#">8</a>
+            <a class="btn btn-ps-cs6" href="#">9</a>
+          </div>
+      </div>
+
+      <br /><br />
+
+      <h5>Vertical Toolbars</h5>
+      <div class="btn-toolbar btn-toolbar-ps-cs6">
+          <div class="btn-group btn-group-vertical">
+            <a class="btn btn-ps-cs6" href="#">1</a>
+            <a class="btn btn-ps-cs6" href="#">2</a>
+            <a class="btn btn-ps-cs6" href="#">3</a>
+          </div>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons-checkbox">
+            <a class="btn btn-ps-cs6 active" href="#">4</a>
+            <a class="btn btn-ps-cs6" href="#">5</a>
+            <a class="btn btn-ps-cs6" href="#">6</a>
+          </div>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons-radio">
+            <a class="btn btn-ps-cs6 active" href="#">7</a>
+            <a class="btn btn-ps-cs6" href="#">8</a>
+            <a class="btn btn-ps-cs6" href="#">9</a>
+          </div>
+      </div>
+          
+      <br /><br />
+
+      <h5>Borderless Toolbars</h5>
+      <div class="btn-toolbar btn-toolbar-ps-cs6">
+          <div class="btn-group">
+            <a class="btn btn-ps-cs6 borderless" href="#">1</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">2</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">3</a>
+          </div>
+          <div class="btn-group" data-toggle="buttons-checkbox">
+            <a class="btn btn-ps-cs6 active borderless" href="#">4</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">5</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">6</a>
+          </div>
+          <div class="btn-group" data-toggle="buttons-radio">
+            <a class="btn btn-ps-cs6 active borderless" href="#">7</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">8</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">9</a>
+          </div>
+      </div>
+
+      <br /><br />
+
+      <h5>Borderless Vertical Toolbars</h5>
+      <div class="btn-toolbar btn-toolbar-ps-cs6">
+          <div class="btn-group btn-group-vertical">
+            <a class="btn btn-ps-cs6 borderless" href="#">1</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">2</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">3</a>
+          </div>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons-checkbox">
+            <a class="btn btn-ps-cs6 active borderless" href="#">4</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">5</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">6</a>
+          </div>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons-radio">
+            <a class="btn btn-ps-cs6 active borderless" href="#">7</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">8</a>
+            <a class="btn btn-ps-cs6 borderless" href="#">9</a>
+          </div>
+      </div>
+          
+      <br /><br />
+
+      <h5>Text Inputs</h5>
+      <input type="text" class="input-text-ps-cs6" style="width: 150px;" />
+      <input type="text" class="input-text-ps-cs6" style="width: 150px;" disabled="disabled"/>
+      <br />
+      <textarea class="input-text-ps-cs6" style="width: 150px; height: 60px"></textarea>
+      <textarea class="input-text-ps-cs6" style="width: 150px; height: 60px" disabled="disabled"></textarea>
+      
+      <br /><br />
+
+      <h5>DropDown Menus</h5>
+      <div class="btn-group open">
+        <button class="btn btn-ps-cs6 dropdown-toggle" data-toggle="dropdown">Drop Down<span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-ps-cs6" role="menu" aria-labelledby="dLabel">
+            <li><a href="#">Action 1</a></li>
+            <li><a href="#">Action 2</a></li>
+            <li><a href="#">Action 3</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Action 4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-ps-cs6 dropdown-toggle" disabled="disabled" data-toggle="dropdown">Drop Down<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+        </ul>
+      </div>
+      
+      <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

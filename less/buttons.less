@@ -1,0 +1,151 @@
+// Borderless
+// -------------------------
+
+.btn {
+    &.btn-ps-cs6 {
+        &.borderless,
+        &.disabled.borderless,
+        &[disabled].borderless {
+            background-color: transparent;
+            border: 0;
+            padding: 3px 6px;
+            background-image: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+        }
+    }
+}
+
+// Core
+// -------------------------
+
+.btn {
+    &.btn-ps-cs6 {
+        cursor: default;
+        font-size: @baseFontSize;
+        letter-spacing: @baseLetterSpacing;
+        color: @textColor;
+        text-shadow: @baseTextShadow;
+        padding: 2px 5px;
+        line-height: @baseLineHeight;
+        background-color: @btnBackground;
+        -webkit-border-radius: @baseBorderRadius;
+    	        border-radius: @baseBorderRadius;
+        border: 1px solid @btnBorderColor;
+        background-image: linear-gradient(to bottom, @btnBgGradient1, @btnBgGradient2);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@btnBgGradient1), to(@btnBgGradient2));
+        -webkit-box-shadow: @btnBoxShadow;
+                box-shadow: @btnBoxShadow;
+                
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            background-position: 0 0;
+            -webkit-transition: none;
+                    transition: none;
+        }
+                
+        &:active,
+        &.active {
+            background-image: linear-gradient(to bottom, @btnBgGradientActive1, @btnBgGradientActive2);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@btnBgGradientActive1), to(@btnBgGradientActive2));
+            -webkit-box-shadow: @btnBoxShadowActive;
+                    box-shadow: @btnBoxShadowActive;
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: @disabledAlpha;
+            filter: alpha(opacity=@disabledAlphaInt);
+            background-color: @btnBackground;
+            background-image: linear-gradient(to bottom, @btnBgGradient1, @btnBgGradient2);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@btnBgGradient1), to(@btnBgGradient2));
+            -webkit-box-shadow: @btnBoxShadow;
+                    box-shadow: @btnBoxShadow;
+        }
+    }
+}
+
+// Vertical Switch
+// -------------------------
+
+.btn {
+    &.switch-vertical-ps-cs6 {
+        cursor: default;
+        padding: 0;
+        overflow: hidden;
+        text-indent: 100px;
+        width: 11px;
+        height: 19px;
+        background: url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+        -webkit-border-radius: 0px;
+    	        border-radius: 0px;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        -webkit-transition: none;
+                transition: none;
+
+        &:active,
+        &.active {
+            background: 0 -19px url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+        }
+        
+        &.on {
+            &:active,
+            &.active {
+                background: 0 -38px url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+            }
+        }
+        
+        &.disabled,
+        &[disabled],
+        &.on.disabled,
+        &.on[disabled] {
+            opacity: @disabledAlpha;
+            filter: alpha(opacity=@disabledAlphaInt);
+            background: url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+        }
+    }
+}
+
+// Checkbox
+// -------------------------
+
+.btn {
+    &.checkbox-ps-cs6 {
+        cursor: default;
+        padding: 0;
+        text-indent: 20px;
+        height: 16px;
+        font-size: @baseFontSize;
+        letter-spacing: @baseLetterSpacing;
+        color: @textColor;
+        text-shadow: none;
+        background: url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+        -webkit-border-radius: 0px;
+    	        border-radius: 0px;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        -webkit-transition: none;
+                transition: none;
+                
+        &:active,
+        &.active {
+            background: 0 -16px url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: @disabledAlpha;
+            filter: alpha(opacity=@disabledAlphaInt);
+            background: url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+        }
+    }
+}
+
+
+
+
+

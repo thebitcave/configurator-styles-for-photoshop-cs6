@@ -1,0 +1,103 @@
+// Dropdown
+// -------------------------
+
+.btn {
+    &.btn-ps-cs6 {
+        &.dropdown,
+        &.dropdown-toggle {
+            outline: none;
+            -webkit-border-bottom-left-radius: @baseBorderRadius;
+                    border-bottom-left-radius: @baseBorderRadius;
+            -webkit-border-top-left-radius: @baseBorderRadius;
+                    border-top-left-radius: @baseBorderRadius;
+            -webkit-border-bottom-right-radius: @baseBorderRadius;
+                    border-bottom-right-radius: @baseBorderRadius;
+            -webkit-border-top-right-radius: @baseBorderRadius;
+                    border-top-right-radius: @baseBorderRadius;
+            
+            .caret,
+            .caret {
+                width: 5px;
+                height: 4px;
+                background: url("@{imagesThemeFolder}@{dropDownArrowImg}") no-repeat transparent;
+                border-top: 0px;
+                border-right: 0px;
+                border-left: 0px;
+                margin-top: 4px;
+                margin-left: 4px;
+            }
+        }
+    }
+}
+
+.open {
+    .btn {
+        &.btn-ps-cs6 {
+            &.dropdown,
+            &.dropdown-toggle {
+                -webkit-border-bottom-left-radius: @baseBorderRadius;
+                        border-bottom-left-radius: @baseBorderRadius;
+                -webkit-border-top-left-radius: @baseBorderRadius;
+                        border-top-left-radius: @baseBorderRadius;
+                -webkit-border-bottom-right-radius: @baseBorderRadius;
+                        border-bottom-right-radius: @baseBorderRadius;
+                -webkit-border-top-right-radius: @baseBorderRadius;
+                        border-top-right-radius: @baseBorderRadius;
+                background-image: linear-gradient(to bottom, @btnBgGradientActive1, @btnBgGradientActive2);
+                background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@btnBgGradientActive1), to(@btnBgGradientActive2));
+                -webkit-box-shadow: @btnBoxShadowActive;
+                        box-shadow: @btnBoxShadowActive;
+            }
+        }
+    }
+}
+
+// Dropdown
+// -------------------------
+
+.dropdown-menu {
+    &.dropdown-menu-ps-cs6 {
+          min-width: 70px;
+          padding: 4px 0;
+          margin: 3px 0 0;
+          background-color: @baseDropdownBg;
+          border: 0;
+          -webkit-border-radius: @dropDownBorderRadius;
+                  border-radius: @dropDownBorderRadius;
+          -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+          
+          li {
+              line-height: 13px;
+          }
+          
+          > li {
+              > a {
+                  color: @dropDownColor;
+                  line-height: @baseLineHeight;
+                  padding: 1px 10px;
+                  font-size: @baseFontSize;
+                  letter-spacing: @baseLetterSpacing;
+                  text-shadow: none;
+
+                    &:hover,
+                    &:focus {
+                        color: @dropDownHoverColor;
+                        text-decoration: none;
+                        background-color: @dropDownBackground;
+                        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@dropDownBgGradient1), to(@dropDownBgGradient2));
+                        background-image: linear-gradient(to bottom, @dropDownBgGradient1, @dropDownBgGradient2);
+                        background-repeat: repeat-x;
+                    }
+                }
+          }
+          
+          .divider {
+              height: 1px;
+              margin: 2px 0px;
+              overflow: hidden;
+              background-color: #e5e5e5;
+              border-bottom: 1px solid #ffffff;
+        }
+    }
+}
