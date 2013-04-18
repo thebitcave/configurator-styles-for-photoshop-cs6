@@ -2,3 +2,8 @@
 
 This set is an extension of Bootstrap to be used with the HTML widget. The styles will imitate the overall look and feel of Photoshop CS6 (including interface variations).
 
+The styles are a subset of [Bootstrap](http://twitter.github.io/bootstrap/) and can easily used by any developer with basic knowledge of HTML and CSS.
+
+## Reference and Documentation
+
+Documentation on how to use the styles can be found [on my website](http://thebitcave.com/2013/04/18/photoshop-cs6-styles-for-configurator-documentation/).
