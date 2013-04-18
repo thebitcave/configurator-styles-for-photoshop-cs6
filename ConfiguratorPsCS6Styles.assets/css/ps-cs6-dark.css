@@ -16,6 +16,12 @@ body.ps-cs6 {
   color: #d6d6d6;
   text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.7);
 }
+a {
+  color: #cdcdcd;
+}
+a:hover {
+  color: #dedede;
+}
 span.disabled.ps-cs6 {
   color: #848484;
 }
