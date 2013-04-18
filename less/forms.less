@@ -1,41 +1,40 @@
 // Text Inputs
 // -------------------------
 
-textarea.input-text-ps-cs6,
-input.input-text-ps-cs6,
-.uneditable-input.input-text-ps-cs6 {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 2px 5px;
-    margin-bottom: 10px;
-    font-size: @baseFontSize;
-    letter-spacing: @baseLetterSpacing;
-    line-height: @baseLineHeight;
-    background-color: @txtInputBg;
-    color: @textColor;
-    vertical-align: middle;
-    -webkit-border-radius: 0px;
-            border-radius: 0px;
-    border: 1px solid @txtInputBorderColor;
-    -webkit-box-shadow: @txtInputBoxShadow;
-            box-shadow: @txtInputBoxShadow;
-    -webkit-transition: none;
-            transition: none;
+textarea,
+input,
+.uneditable-input {
+    &.ps-cs6 {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 2px 5px;
+        margin-bottom: 10px;
+        font-size: @baseFontSize;
+        letter-spacing: @baseLetterSpacing;
+        line-height: @baseLineHeight;
+        background-color: @txtInputBg;
+        color: @textColor;
+        vertical-align: middle;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        border: 1px solid @txtInputBorderColor;
+        -webkit-box-shadow: @txtInputBoxShadow;
+                box-shadow: @txtInputBoxShadow;
+        -webkit-transition: none;
+                transition: none;
+
+        &:focus {
+            outline: auto;
+            outline-color: @outlineColor;
+            background-color: @txtInputBgFocus;
+            color: @textColorFocus;
+        }
+
+        &[disabled] {
+            opacity: @disabledAlpha;
+            filter: alpha(opacity=@disabledAlphaInt);
+        }
+    }
 }
 
-textarea.input-text-ps-cs6:focus,
-input[type="text"].input-text-ps-cs6:focus,
-.uneditable-input.input-text-ps-cs6:focus {
-    outline: auto;
-    outline-color: @outlineColor;
-    background-color: @txtInputBgFocus;
-    color: @textColorFocus;
-}
-
-textarea.input-text-ps-cs6[disabled],
-input.input-text-ps-cs6[disabled],
-.uneditable-input.input-text-ps-cs6[disabled] {
-    opacity: @disabledAlpha;
-    filter: alpha(opacity=@disabledAlphaInt);
-}

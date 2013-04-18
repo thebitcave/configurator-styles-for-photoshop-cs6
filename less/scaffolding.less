@@ -1,5 +1,5 @@
 body {
-    &.body-ps-cs6 {
+    &.ps-cs6 {
         background-color: @bodyBackground;
         font-size: @baseFontSize;
         letter-spacing: @baseLetterSpacing;
@@ -11,7 +11,9 @@ body {
 }
 
 span {
-    &.disabled-ps-cs6 {
-        color: @textDisabledColor;
+    &.disabled {
+        &.ps-cs6 {
+            color: @textDisabledColor;
+        }
     }
 }

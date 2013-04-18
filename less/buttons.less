@@ -2,7 +2,7 @@
 // -------------------------
 
 .btn {
-    &.btn-ps-cs6 {
+    &.ps-cs6 {
         &.borderless,
         &.disabled.borderless,
         &[disabled].borderless {
@@ -20,7 +20,7 @@
 // -------------------------
 
 .btn {
-    &.btn-ps-cs6 {
+    &.ps-cs6 {
         cursor: default;
         font-size: @baseFontSize;
         letter-spacing: @baseLetterSpacing;
@@ -70,41 +70,43 @@
 // -------------------------
 
 .btn {
-    &.switch-vertical-ps-cs6 {
-        cursor: default;
-        padding: 0;
-        overflow: hidden;
-        text-indent: 100px;
-        width: 11px;
-        height: 19px;
-        background: url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
-        -webkit-border-radius: 0px;
-    	        border-radius: 0px;
-        border: 0;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        -webkit-transition: none;
-                transition: none;
-
-        &:active,
-        &.active {
-            background: 0 -19px url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
-        }
-        
-        &.on {
+    &.ps-cs6 {
+        &.switch {
+            cursor: default;
+            padding: 0;
+            overflow: hidden;
+            text-indent: 100px;
+            width: 11px;
+            height: 19px;
+            background: url("@{imagesThemeFolder}@{switchImg}") no-repeat transparent;
+            -webkit-border-radius: 0px;
+        	        border-radius: 0px;
+            border: 0;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            -webkit-transition: none;
+                    transition: none;
+    
             &:active,
             &.active {
-                background: 0 -38px url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+                background: 0 -19px url("@{imagesThemeFolder}@{switchImg}") no-repeat transparent;
             }
-        }
-        
-        &.disabled,
-        &[disabled],
-        &.on.disabled,
-        &.on[disabled] {
-            opacity: @disabledAlpha;
-            filter: alpha(opacity=@disabledAlphaInt);
-            background: url("@{imagesThemeFolder}@{switchVerticalImg}") no-repeat transparent;
+            
+            &.on {
+                &:active,
+                &.active {
+                    background: 0 -38px url("@{imagesThemeFolder}@{switchImg}") no-repeat transparent;
+                }
+            }
+            
+            &.disabled,
+            &[disabled],
+            &.on.disabled,
+            &.on[disabled] {
+                opacity: @disabledAlpha;
+                filter: alpha(opacity=@disabledAlphaInt);
+                background: url("@{imagesThemeFolder}@{switchImg}") no-repeat transparent;
+            }
         }
     }
 }
@@ -113,34 +115,38 @@
 // -------------------------
 
 .btn {
-    &.checkbox-ps-cs6 {
-        cursor: default;
-        padding: 0;
-        text-indent: 20px;
-        height: 16px;
-        font-size: @baseFontSize;
-        letter-spacing: @baseLetterSpacing;
-        color: @textColor;
-        text-shadow: none;
-        background: url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
-        -webkit-border-radius: 0px;
-    	        border-radius: 0px;
-        border: 0;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        -webkit-transition: none;
-                transition: none;
-                
-        &:active,
-        &.active {
-            background: 0 -16px url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
-        }
-
-        &.disabled,
-        &[disabled] {
-            opacity: @disabledAlpha;
-            filter: alpha(opacity=@disabledAlphaInt);
+    &.ps-cs6 {
+        &.checkbox {
+            cursor: default;
+            padding: 0;
+            text-indent: 20px;
+            height: 16px;
+            line-height: @baseLineHeight;
+            min-height: @baseLineHeight;
+            font-size: @baseFontSize;
+            letter-spacing: @baseLetterSpacing;
+            color: @textColor;
+            text-shadow: none;
             background: url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+            -webkit-border-radius: 0px;
+        	        border-radius: 0px;
+            border: 0;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            -webkit-transition: none;
+                    transition: none;
+                    
+            &:active,
+            &.active {
+                background: 0 -16px url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+            }
+    
+            &.disabled,
+            &[disabled] {
+                opacity: @disabledAlpha;
+                filter: alpha(opacity=@disabledAlphaInt);
+                background: url("@{imagesThemeFolder}@{checkboxImg}") no-repeat transparent;
+            }
         }
     }
 }
