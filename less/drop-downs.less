@@ -15,16 +15,35 @@
             -webkit-border-top-right-radius: @baseBorderRadius;
                     border-top-right-radius: @baseBorderRadius;
             
-            .caret,
             .caret {
                 width: 5px;
                 height: 4px;
                 background: url("@{imagesThemeFolder}@{dropDownArrowImg}") no-repeat transparent;
+                border-bottom: 0px;
                 border-top: 0px;
                 border-right: 0px;
                 border-left: 0px;
                 margin-top: 4px;
                 margin-left: 4px;
+            }
+        }
+    }
+}
+
+.dropup {
+    .dropdown-menu {
+        &.ps-cs6 {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.dropup {
+    .ps-cs6 {
+        &.dropdown,
+        &.dropdown-toggle {
+            .caret {
+                background: url("@{imagesThemeFolder}@{dropUpArrowImg}") no-repeat transparent;
             }
         }
     }

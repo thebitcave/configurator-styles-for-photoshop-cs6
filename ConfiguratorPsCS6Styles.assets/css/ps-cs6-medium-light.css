@@ -227,17 +227,23 @@ input.ps-cs6[disabled],
   border-top-right-radius: 2px;
 }
 .btn.ps-cs6.dropdown .caret,
-.btn.ps-cs6.dropdown-toggle .caret,
-.btn.ps-cs6.dropdown .caret,
 .btn.ps-cs6.dropdown-toggle .caret {
   width: 5px;
   height: 4px;
   background: url("../img/medium-light/dropdown-arrow.png") no-repeat transparent;
+  border-bottom: 0px;
   border-top: 0px;
   border-right: 0px;
   border-left: 0px;
   margin-top: 4px;
   margin-left: 4px;
+}
+.dropup .dropdown-menu.ps-cs6 {
+  margin-bottom: 5px;
+}
+.dropup .ps-cs6.dropdown .caret,
+.dropup .ps-cs6.dropdown-toggle .caret {
+  background: url("../img/medium-light/dropup-arrow.png") no-repeat transparent;
 }
 .open .btn.ps-cs6.dropdown,
 .open .btn.ps-cs6.dropdown-toggle {
