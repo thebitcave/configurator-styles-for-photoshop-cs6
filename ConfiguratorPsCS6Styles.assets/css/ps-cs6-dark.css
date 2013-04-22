@@ -25,6 +25,12 @@ a:hover {
 span.disabled.ps-cs6 {
   color: #848484;
 }
+.box-container.ps-cs6 {
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+  border-left: 1px solid #121212;
+  border-right: 1px solid #121212;
+}
 .btn.ps-cs6.borderless,
 .btn.ps-cs6.disabled.borderless,
 .btn.ps-cs6[disabled].borderless {
@@ -298,4 +304,49 @@ input.ps-cs6[disabled],
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
+}
+.nav.nav-tabs.ps-cs6 {
+  background-color: #212121;
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #454545;
+  margin-bottom: 5px;
+}
+.nav.nav-tabs.ps-cs6 li {
+  background-color: #212121;
+  background-image: linear-gradient(to bottom, #212121, #1b1b1b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#212121), to(#1b1b1b));
+  border-right: 1px solid #121212;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.nav.nav-tabs.ps-cs6 li a {
+  background-color: transparent;
+  padding: 2px 5px;
+  margin-right: 0px;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: #848484;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.7);
+  line-height: 11px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #121212;
+  border-left: 0;
+  border-right: 0;
+}
+.nav.nav-tabs.ps-cs6 li:active,
+.nav.nav-tabs.ps-cs6 li.active {
+  background-color: #343434;
+  background-image: none;
+  margin-bottom: -1px;
+  border-bottom: 1px solid transparent;
+}
+.nav.nav-tabs.ps-cs6 li:active a,
+.nav.nav-tabs.ps-cs6 li.active a {
+  color: #d6d6d6;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #454545;
 }

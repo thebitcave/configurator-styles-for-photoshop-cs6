@@ -1,0 +1,52 @@
+.nav {
+    &.nav-tabs {
+        &.ps-cs6 {
+            background-color: @navBackground;
+            border-top: 1px solid @navHighlight;
+            border-bottom: 1px solid @navActiveHighlight;
+            margin-bottom: 5px;
+            
+            li {
+                background-color: @navBackground;
+                background-image: linear-gradient(to bottom, @navBgGradient1, @navBgGradient2);
+                background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@navBgGradient1), to(@navBgGradient2));
+                border-right: 1px solid @baseBorderColor;
+                margin-top: -1px;
+                margin-bottom: -1px;
+
+                a {
+                    background-color: transparent;
+                    padding: 2px 5px;
+                    margin-right: 0px;
+                    font-size: @baseFontSize;
+                    letter-spacing: @baseLetterSpacing;
+                    color: @textUnselectedColor;
+                    text-shadow: @baseTextShadow;
+                    line-height: @baseLineHeight;
+                    -webkit-border-top-left-radius: 0px;
+                            border-top-left-radius: 0px;
+                    -webkit-border-top-right-radius: 0px;
+                            border-top-right-radius: 0px;
+                    border-top: 1px solid @navHighlight;
+                    border-bottom: 1px solid @baseBorderColor;
+                    border-left: 0;
+                    border-right: 0;
+                }
+
+                &:active,
+                &.active {
+                    background-color: @bodyBackground;
+                    background-image: none;
+                    margin-bottom: -1px;
+                    border-bottom: 1px solid transparent;
+                   
+                    a {
+                        color: @textColor;
+                        border-bottom: 1px solid transparent;
+                        border-top: 1px solid @navActiveHighlight;
+                    }
+                }
+            }
+        }
+    }
+}
