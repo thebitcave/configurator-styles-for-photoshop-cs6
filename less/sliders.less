@@ -1,0 +1,32 @@
+.ui-slider-horizontal.ps-cs6 {
+    margin: 5px 0;
+	height: 5px;
+    border: 1px solid @sldBorderColor;
+    background-image: linear-gradient(to bottom, @sldBgGradient1, @sldBgGradient2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@sldBgGradient1), to(@sldBgGradient2));
+    -webkit-box-shadow: @sldBoxShadow;
+            box-shadow: @sldBoxShadow;    
+    -webkit-border-radius: @baseBorderRadius;
+            border-radius: @baseBorderRadius;
+}
+
+.ui-slider-horizontal.ps-cs6 .ui-slider-handle {
+    outline: none;
+	top: -3px;
+	margin-left: -6px;
+    width: 13px;
+    height: 13px;
+    background: url("@{imagesThemeFolder}@{sliderHandle}") no-repeat transparent;
+}
+
+.ui-slider-horizontal.ps-cs6 .ui-slider-range {
+    background-image: linear-gradient(to bottom, @sldRngGradient1, @sldRngGradient2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@sldRngGradient1), to(@sldRngGradient2));
+}
+
+.ui-slider-horizontal.ps-cs6 .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal.ps-cs6 .ui-slider-range-max {
+	right: 0;
+}

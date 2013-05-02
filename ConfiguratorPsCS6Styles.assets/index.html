@@ -3,9 +3,11 @@
   <head>
     <title>Configurator - Photoshop CS6 Skin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/jquery-ui.css" rel="stylesheet" media="screen">
+
 
     <!-- Ps CS6 variant -->
     <link id="theme_stylesheet" href="css/ps-cs6-medium-dark.css" rel="stylesheet" media="screen">
@@ -33,7 +35,7 @@
                document.getElementById('theme_stylesheet').href = "css/ps-cs6-medium-dark.css";
        }
     </script>
-
+      
   </head>
     
   <body class="ps-cs6" onload="addEventListener('ThemeChangedEvent', onThemeChanged)">
@@ -221,9 +223,29 @@
               <li><a href="#">Tab 4</a></li>
           </ul>
       </div>
+
+      <br /><br />
       
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.js"></script>
+      <h5>Sliders</h5>
+
+      <div id="slider1" class="ps-cs6"></div>
+      <br />
+      <div id="slider2" class="ps-cs6"></div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script>
+        $(function() {$("#slider1").slider();})
+
+        $(function() {$("#slider2").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ]}
+        );})
+      </script>
+
+      <script src="js/bootstrap.js"></script>
+      
   </body>
 </html>
