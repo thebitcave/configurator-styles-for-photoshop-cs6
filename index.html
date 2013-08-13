@@ -1,79 +1,329 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Configurator PS CS6 Styles : A set of styles fot the Adobe Configurator HTML widget imitating the Photoshop CS6 UI." />
+<head>
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="description"
+          content="Configurator PS CS6 Styles : A set of styles fot the Adobe Configurator HTML widget imitating the Photoshop CS6 UI."/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Configurator PS CS6 Styles</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/marcosecchi/configurator_ps_cs6_styles">View on GitHub</a>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/marcosecchi/configurator_ps_cs6_styles">View on GitHub</a>
 
-          <h1 id="project_title">Configurator PS CS6 Styles</h1>
-          <h2 id="project_tagline">A set of styles fot the Adobe Configurator HTML widget imitating the Photoshop CS6 UI.</h2>
+        <h1 id="project_title">Configurator PS CS6 Styles</h1>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/marcosecchi/configurator_ps_cs6_styles/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/marcosecchi/configurator_ps_cs6_styles/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <h2 id="project_tagline">A set of styles fot the Adobe Configurator HTML widget imitating the Photoshop CS6
+            UI.</h2>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <section id="downloads">
+            <a class="zip_download_link"
+               href="https://github.com/marcosecchi/configurator_ps_cs6_styles/zipball/master">Download this project as
+                a .zip file</a>
+            <a class="tar_download_link"
+               href="https://github.com/marcosecchi/configurator_ps_cs6_styles/tarball/master">Download this project as
+                a tar.gz file</a>
+        </section>
+    </header>
+</div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+<h3>
+    <a name="configurator-ps-cs6-styles" class="anchor" href="#configurator-ps-cs6-styles"><span
+            class="octicon octicon-link"></span></a>Configurator PS CS6 Styles</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>Photoshop CS6 Styles for Configurator is a small ongoing project to provide a consistent UI for the <a
+        href="http://labs.adobe.com/technologies/configurator/" target="_blank">Adobe Configurator</a> HTML widget.<br/>
+    Basically you will be able to develop your own HTML application plugin with the full Photoshop CS6 user interface
+    and experience.</p>
+
+<p><em>Please note that although this set is based on <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>,
+    it has been written for the HTML Configurator widget, so you most probably won't have cross-browser compatibility if
+    you will need it for some other purpose.</em>
+</p>
+
+<h3>Setup</h3>
+
+<p> Setting up the style is quite easy (I'm assuming that you have some basic knowledge of HTML and CSS and know how to
+    setup a Configurator project with and HTML widget).
+</p>
+<h5>1. Copy the Files</h5>
+
+<p> Copy the <em>css</em>, <em>img</em> and <em>js</em> folders (you will find them in the <em>ConfiguratorPsCS6Styles.assets</em>
+    foder) you <a href="https://github.com/marcosecchi/configurator_ps_cs6_styles" target="_blank">downloaded from the
+        project page</a> into your Configurator project folder (usually <em>{YourPanelName}.assets</em>). These files
+    already include the Bootstrap base elements.
+</p>
+<img src="images/photoshop_styles_configurator_01.png"
+     alt="Copying the files in your project folder"/>
+
+<h5>2. Create an HTML page</h5>
+
+Now create a regular HTML page and save it in your project folder.<br/>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;App Title&lt;/title&gt;
+
+&lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;link id=&quot;theme_stylesheet&quot; href=&quot;css/ps-cs6-medium-dark.css&quot; rel=&quot;stylesheet&quot;
+media=&quot;screen&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;ps-cs6&quot;&gt;
+
+&lt;p&gt;Content...&lt;/p&gt;
+
+&lt;script src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<br/>
+
+<p>As you can see we have declared the main Bootstrap css (and its required scripts) and added the <em>medium dark</em>
+    style of Photoshop CS6. Please note that we have declared the class <code>ps-cs6</code> for the body: this will
+    create a
+    nice grey background and set the main typography for the application once you assign the
+    html
+    page to the widget.</p>
+
+<img src="images/photoshop_styles_configurator_02.png"
+     alt="The html page with the style applied."/>
+
+<h5>3. Switching Styles at Runtime</h5>
+
+<p>If you export your panel, you will notice that this style is nice for the <em>medium grey</em> interface of
+    Photoshop.
+    However this won't do any good if the user has opted for <em>light</em>, <em>medium light</em> or <em>dark</em>!</p>
+
+<p>Fortunately we can add a listener for the <code>ThemeChangedEvent</code> (i.e.: when the user changes interface
+    theme):
+</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;App Title&lt;/title&gt;
+
+&lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;link id=&quot;theme_stylesheet&quot; href=&quot;css/ps-cs6-medium-dark.css&quot; rel=&quot;stylesheet&quot;
+media=&quot;screen&quot;&gt;
+
+&lt;script type=&quot;application/javascript&quot;&gt;
+function onThemeChanged(event) {
+if (event.appSkinInfo.panelBackgroundColor == &quot;343434&quot;)
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-dark.css&quot;;
+else if (event.appSkinInfo.panelBackgroundColor == &quot;535353&quot;)
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-medium-dark.css&quot;;
+else if (event.appSkinInfo.panelBackgroundColor == &quot;d6d6d6&quot;)
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-light.css&quot;;
+else if (event.appSkinInfo.panelBackgroundColor == &quot;b8b8b8&quot;)
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-medium-light.css&quot;;
+// if none of these colors are found, fallback to isLight/isDark
+else if (event.isLight)
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-medium-light.css&quot;;
+else
+document.getElementById('theme_stylesheet').href = &quot;css/ps-cs6-medium-dark.css&quot;;
+}
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;ps-cs6&quot; onload=&quot;addEventListener('ThemeChangedEvent', onThemeChanged)&quot;&gt;
+
+&lt;p&gt;Content...&lt;/p&gt;
+
+&lt;script src=&quot;http://code.jquery.com/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>As you can see the code is quite straightforward: we check when the theme changes and assign the appropriate stylesheet.
+The last two <code>else if/else</code> statements are "just in case" the panel background color is not found: we check
+if the theme is light or dark.
+</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>You are now ready to create your own Photoshop CS6 styled application. Following you can find a reference of all
+available styles.
+</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Style Reference</h3>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>Using the styles is quite easy: you will be using the regular Bootstrap classes, usually adding a class named <code>ps-cs6</code>
+when the element is available.
+</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h5>Core Styles</h5>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>To add the overall Photoshop look&amp;feel, simply add a <code>ps-cs6</code> class declaration to the <code>body</code>
+tag:
+</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>&lt;body class=&quot;ps-cs6&quot;&gt;</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h5>Disabled Components</h5>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+In some situations you may need to disable some components: in these cases simply use the regular procedure for
+Bootstrap. As an exaple, to ste a text as disabled, use:
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Configurator PS CS6 Styles maintained by <a href="https://github.com/marcosecchi">marcosecchi</a></p>
+<pre><code>&lt;span class=&quot;disabled ps-cs6&quot;&gt;Disabled Text&lt;/span&gt;</code></pre>
+
+<img src="images/photoshop_styles_configurator_03.png" alt="The basic text styles."/>
+
+<h5>Buttons</h5>
+
+<p>As in Bootstrap, you can use &lt;button&gt; &lt;a&gt; &lt;input&gt; tags:</p>
+
+<pre><code>&lt;button class=&quot;btn ps-cs6&quot;&gt;Button&lt;/button&gt;</code></pre>
+<br />
+<pre><code>&lt;a href=&quot;#&quot; class=&quot;btn ps-cs6&quot;&gt;Button&lt;/a&gt;</code></pre>
+<br />
+<pre><code>&lt;input class=&quot;btn ps-cs6&quot; type=&quot;button&quot; value=&quot;Input&quot;/&gt;</code></pre>
+<br />
+<pre><code>&lt;input class=&quot;btn ps-cs6&quot; type=&quot;submit&quot; value=&quot;Submit&quot;/&gt;</code></pre>
+<br />
+<p>Additionally, the element can be of <em>toggle</em> type:</p>
+
+<pre><code>&lt;button class=&quot;btn ps-cs6&quot; data-toggle=&quot;button&quot;&gt;Button&lt;/button&gt;</code></pre>
+<br />
+<img src="images/photoshop_styles_configurator_04.png" alt="Button Elements"/>
+
+<h5>Alternative Buttons</h5>
+
+Photoshop has some nice UI buttons to be used in some particular cases.
+
+<p>The <em>switch button</em> (which can also be set to <em>on</em> state):
+</p>
+
+<pre><code>&lt;button class=&quot;btn switch ps-cs6 active&quot; data-toggle=&quot;button&quot;&gt;...&lt;/button&gt;</code></pre>
+<br />
+<pre><code>&lt;button class=&quot;btn switch ps-cs6 on&quot; disabled=&quot;disabled&quot; data-toggle=&quot;button&quot;&gt;...&lt;/button&gt;</code></pre>
+
+<img src="images/photoshop_styles_configurator_05.png" alt="The switch buttons."/>
+<div style="clear:both;height:10px;"></div>
+
+<p>The <em>checkbox button</em>:</p>
+
+<pre><code>&lt;button class=&quot;btn checkbox ps-cs6&quot; data-toggle=&quot;button&quot;&gt;Button&lt;/button&gt;</code></pre>
+
+<img src="images/photoshop_styles_configurator_06.png" alt="The checkbox button."/>
+<div style="clear:both;height:10px;"></div>
+
+<p>The <em>borderless button</em> (this makes more sense if used with an icon as content instead of regular text):
+</p>
+
+<pre><code>&lt;button class=&quot;btn ps-cs6 borderless&quot;&gt;Button&lt;/button&gt;</code></pre>
+
+<h5>Toolbars</h5>
+
+<p>To declare a toolbar, use this syntax:
+</p>
+
+<pre><code>&lt;div class=&quot;btn-toolbar ps-cs6&quot;&gt;&lt;/div&gt;</code></pre>
+
+<p>and then insert the button elements as described above. You can, of course, use both vertical and horizontal toolbars.
+</p>
+
+<h5>Inputs and Text Areas</h5>
+
+<p>Again, you should simply add a <code>ps-cs6</code> class:
+</p>
+
+<pre><code>&lt;input type=&quot;text&quot; class=&quot;ps-cs6&quot;/&gt;</code></pre>
+<br />
+<pre><code>&lt;textarea class=&quot;ps-cs6&quot;&gt;&lt;/textarea&gt;</code></pre>
+
+<img src="images/photoshop_styles_configurator_07.png" alt="Text input and text area."/>
+<div style="clear:both;height:10px;"></div>
+
+<h5>Dropdowns and Dropups</h5>
+
+<p>The dropdown menu is declared in a similar way to the regular Bootstrap one.
+</p>
+
+<pre><code>&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button class=&quot;btn ps-cs6 dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Drop Down&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu ps-cs6&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action 3&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<img src="images/photoshop_styles_configurator_08.png" alt="The dropdown menu."/>
+<div style="clear:both;height:10px;"></div>
+
+<p>To declare a dropup menu, simply add the <code>dropup</code> class to the button group declaration:
+</p>
+
+<pre><code>&lt;div class=&quot;btn-group dropup&quot;&gt;
+...
+&lt;/div&gt;
+</code></pre>
+
+<p><em>Please note that at the moment the Photoshop panel runtime has some serious issue with the <code>
+    &lt;select&gt;</code> element, so it is impossible to use it in a Configurator application.</em>
+</p>
+
+<h5>Tabs</h5>
+
+<p>Simply add <code>ps-cs6</code> to your tab <code>ul</code> list.
+</p>
+
+<pre><code>&lt;ul class=&quot;nav nav-tabs ps-cs6&quot;&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+...
+&lt;/ul&gt;
+</code></pre>
+
+<img src="images/photoshop_styles_configurator_09.png" alt="Tab navigator."/>
+
+<h3>Additional Components</h3>
+
+<p>An extension set using <a href="http://jqueryui.com/" target="_blank">JQuery UI</a> is also available. To use these
+components, simply add the required styles and scripts for the library:
+</p>
+
+<pre><code>&lt;link href=&quot;css/jquery-ui.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;</code></pre>
+
+<p>and</p>
+
+<pre><code>&lt;script src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h5>Sliders</h5>
+
+<p>As the components described above, you simply have to add a <code>ps-cs6</code> class and use the regular <a
+        href="http://jqueryui.com/slider/" target="_blank">JQuery UI syntax for a slider</a>.
+</p>
+
+<img src="images/photoshop_styles_configurator_10.png" alt="Two sliders: a regular and a ranged one"/>
+
+</section>
+</div>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p class="copyright">Configurator PS CS6 Styles maintained by <a href="https://github.com/marcosecchi">marcosecchi</a>
+        </p>
+
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-    
 
-  </body>
+</body>
 </html>
