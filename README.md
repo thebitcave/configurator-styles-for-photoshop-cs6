@@ -6,4 +6,4 @@ The styles are a subset of [Bootstrap](http://twitter.github.io/bootstrap/) and 
 
 ## Reference and Documentation
 
-Documentation on how to use the styles can be found [on my website](http://thebitcave.com/2013/04/18/photoshop-cs6-styles-for-configurator-documentation/).
+Documentation on how to use the styles can be found [on GitHub pages](http://marcosecchi.github.io/configurator_ps_cs6_styles/).
