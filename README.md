@@ -1,6 +1,6 @@
 # Configurator Ps CS6 Styles
 
-_Please note that this project is no longer maintained_
+_Please note that this project is no longer under active developement._
 
 This set is an extension of Bootstrap to be used with the HTML widget. The styles will imitate the overall look and feel of Photoshop CS6 (including interface variations).
 
