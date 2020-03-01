@@ -8,4 +8,4 @@ The styles are a subset of [Bootstrap](http://twitter.github.io/bootstrap/) and 
 
 ## Reference and Documentation
 
-Documentation on how to use the styles can be found [on GitHub pages](http://marcosecchi.github.io/configurator_ps_cs6_styles/).
+Documentation on how to use the styles can be found [on GitHub pages](http://thebitcave.github.io/configurator-styles-for-photoshop-cs6/).
